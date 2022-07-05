@@ -1,0 +1,15 @@
+<div >
+  <!-- <div *ngFor="let img of _images">
+    <img [src]="img.url">
+  </div> -->
+    <h1>Data Binding</h1>
+    <select (change)="onChange($event)">
+      <option>Select</option>
+    <option *ngFor="let img of _images" value="{{img.url}}">{{img.title}}
+   </option>
+ </select><br>
+ <div class="picture">
+<img [src]="picture" width="500px" height="250px">
+</div>
+  
+</div>
